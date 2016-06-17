@@ -1,0 +1,16 @@
+{
+  "name": "prn2xls_electron",
+  "version": "1.0.0",
+  "description": "html to pdf generator using electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Radin Reth",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.3",
+    "express": "^4.14.0",
+    "wkhtmltopdf": "^0.3.1"
+  }
+}
