@@ -10,6 +10,8 @@
       <md-button class="md-primary md-mini md-raised" aria-label="Mini Button" ng-click="generate()">
         click me!
       </md-button>
+
+      <a href="{{ downloadUrl }}">download</a>
     </div>
 
     <script src="node_modules/angular/angular.min.js"></script>
@@ -23,6 +25,8 @@
       var app = angular.module('prn2xlsApp', ['ngMaterial']);
       
       app.controller('prnCtrl', ['$scope', '$http', function($scope, $http){
+        $scope.downloadUrl = __dirname + '/page.pdf';
+
         $scope.generate = function() {
           require('./app.js');
         }
