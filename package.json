@@ -4,7 +4,9 @@
   "description": "html to pdf generator using electron",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "asar pack prn2xls_electron-win32-x64/resources/app prn2xls_electron-win32-x64/resources/app.asar",
+    "build": "electron-packager . prn2xls_electron --platform=win32 --arch=all --overwrite"
   },
   "author": "Radin Reth",
   "license": "ISC",
@@ -13,6 +15,8 @@
     "angular-animate": "^1.5.7",
     "angular-aria": "^1.5.7",
     "angular-material": "^1.0.9",
+    "asar": "^0.11.0",
+    "electron-packager": "^7.0.4",
     "electron-prebuilt": "^1.2.3",
     "express": "^4.14.0",
     "wkhtmltopdf": "^0.3.1"

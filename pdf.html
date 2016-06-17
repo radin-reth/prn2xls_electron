@@ -3,44 +3,135 @@
   <meta charset='utf-8'>
   <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
   <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      line-height: 21px;
+      font-size: 15px;
+    }
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+    }
+    #header {
+      margin-bottom: 30px;
+    }
+
+    #address {
+      border-bottom: 2px inset #949292;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+
+    .table {
+      width: 100%;
+    }
+    
+    table, th, td {
+      /*border: 1px solid #ccc;*/
+      vertical-align: top
+    }
+    
+    td:nth-child(3n) {
+      width: 305px;
+    }
+    
+    td:nth-child(4n) {
+      text-align: right;
+      margin-right: 5px;
+    }
+    td:last-child {
+      padding-left: 15px;
+      width: 183px;
+    }
+  </style>
 </head>
 <body>
-  <p>វិក្កយប័ត្រអាករ</p>
-    <p>vat invoice</p>
-    <p>លេខអត្តសញាណកម្ម អតប/vat tin: 100046029</p>
-    <p>
-      <span>ឈ្មោះអតិថិជន:</span>
-      <span class="right">ទំព័រ/Page No.: 1</span>
-    </p>
-    <p>
-      <span>Bill To: Sok Heng (Gin Seng Wine)</span>
-      <span class="right">លេខរៀងវិក្កយប័ត្រ/Invoice No.: MI...</span>
-    </p>
-    <p>
-      <span>អាស័យដ្ឋាន:</span>
-      <span class="right">កាលបរិច្ឆេទ/Invoice Dt.: MI...</span>
-    </p>
-    <p>
-      <span class="right">លេខរៀងការបញ្ជាទិញ/S.O.No.: MI...</span>
-    </p>
+  <div class="container">
+    <section id="header">    
+      <p>
+        <strong>វិក្កយប័ត្រអាករ</strong>
+      </p>
+      <p>VAT INVOICE</p>
+      <p>លេខអត្តសញាណកម្ម អតប/VAT TIN: 100046029</p>
+    </section>
 
-    <p>
-      <span>Address: 452 Hightway No. 5Km6 Russey Keo <br> Phnom Penh, Cambodia</span>
-      <span class="right">កិច្ចសន្យាលេខ/Contract No.:... <br> កាលបរិច្ឆេទនៃកិច្ចសន្យា/Contract Dt.: ...</span>
-    </p>
-    <p>
-      <span>C.Code: ...</span>
-      <span class="right">រយះពេលទូទាត់:</span>
-    </p>
-    <p>
-      <span>vat:</span>
-      <span class="right">terms: ...</span>
-    </p>
-    <p>
-      <span>Contact: Gin Seng Wine</span>
-      <span class="right">date ...</span>
-    </p>
-    <hr>
+    <section id="address">
+      <table class="table">
+        <tr>
+          <td>ឈ្មោះអតិថិជន:</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>ទំព័រ/Page No.:</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Bill To:</td>
+          <td>Sok Heng (Gin Seng Wine)</td>
+          <td>&nbsp;</td>
+          <td>លេខរៀងវិក្កយប័ត្រ/Invoice No.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td>អាស័យដ្ឋាន:</td>
+          <td></td>
+          <td>&nbsp;</td>
+          <td>កាលបរិច្ឆេទ/Invoice Dt.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>&nbsp;</td>
+          <td>លេខរៀងការបញ្ជាទិញ/S.O.No.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>452 Hightway No. 5Km6 Russey Keo <br> </td>
+          <td>&nbsp;</td>
+          <td>កិច្ចសន្យាលេខ/Contract No.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Phnom Penh, Cambodia</td>
+          <td>&nbsp;</td>
+          <td>កាលបរិច្ឆេទនៃកិច្ចសន្យា/Contract Dt.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td>Bill To:</td>
+          <td>Sok Heng (Gin Seng Wine)</td>
+          <td>&nbsp;</td>
+          <td>លេខរៀងវិក្កយប័ត្រ/Invoice No.:</td>
+          <td>MI-A080804</td>
+        </tr>
+        <tr>
+          <td>C.Code:</td>
+          <td>CG00000002</td>
+          <td>&nbsp;</td>
+          <td>រយះពេលទូទាត់:</td>
+          <td>៧ថ្ងៃបន្ទាប់ពីទទួលបានវិក្កយប័ត្រ</td>
+        </tr>
+        <tr>
+          <td>VAT:</td>
+          <td></td>
+          <td>&nbsp;</td>
+          <td>Terms:</td>
+          <td>7 days after the date of receiving invoice</td>
+        </tr>
+        <tr>
+          <td>Contact:</td>
+          <td>Gin Seng Wine</td>
+          <td>&nbsp;</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+
     <table>
       <tr>
         <td>លេខរៀង</td>
@@ -200,5 +291,6 @@
     <hr>
     សរុបទំព័រទី១ Sub Total Page No. 1: 15,317.59
     <hr>
+  </div>
 </body>
 </html>
