@@ -2,3 +2,4 @@
 /assets
 /*.pdf
 /prn2xls_electron-win32*
+.DS_Store
