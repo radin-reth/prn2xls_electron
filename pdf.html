@@ -65,14 +65,53 @@
       padding-top: 15px;
     }
 
-    .sub-total {
+    .sub-total,
+    .grand-total {
       border-top: 2px inset #949292;
       border-bottom: 2px inset #949292;
     }
 
-    .sub-total td {
+    .sub-total td,
+    .grand-total td {
       padding: 15px 0;
       text-align: right;
+    }
+
+    .total, 
+    .vat,
+    .grand-total {
+      text-align: right;
+    }
+
+    .footer {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+
+    .payment-options {
+      float: left;
+    }
+
+    .payment-options ul {
+      list-style: none;
+    }
+
+    .signature {
+      float: right;
+    }
+
+    .account-info {
+      margin-top: 15px;
+    }
+
+    .sign-place {
+      width: 125px;
+      margin-top: 90px;
+      border: 1px dotted #ccc;
+    }
+
+    .clear {
+      clear: both;
     }
   </style>
 </head>
@@ -161,100 +200,147 @@
       </table>
     </section>
 
-    <table class="table table-goods">
-      <tr>
-        <td>លេខរៀង</td>
-        <td>កូតទំនិញ/សេវា</td>
-        <td>បរិយាយមុខទំនិញ/សេវា</td>
-        <td>បរិមាណ</td>
-        <td>ចំនួនទឺកប្រាក់</td>
-      </tr>
-      <tr>
-        <td>Line</td>
-        <td>Item Code</td>
-        <td>Item Description</td>
-        <td>No.of Spot</td>
-        <td>US$ Amount</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>-</td>
-        <td>Ganzberg Beer Ads 02 16</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>002</td>
-        <td>110A4511</td>
-        <td>SP Package-455 1100-1200</td>
-        <td>13</td>
-        <td>919.19</td>
-      </tr>
-      <tr>
-        <td>003</td>
-        <td>110A2511</td>
-        <td>SP Package-255 1100-1200</td>
-        <td>23</td>
-        <td>1,626.26</td>
-      </tr>
-      <tr>
-        <td>004</td>
-        <td>110A4512</td>
-        <td>SP Package-45$ 1200-1300</td>
-        <td>8</td>
-        <td>754.21</td>
-      </tr>
-      <tr>
-        <td>005</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>19</td>
-        <td>1,791.25</td>
-      </tr>
-      <tr>
-        <td>006</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>17</td>
-        <td>1,664.34</td>
-      </tr>
-      <tr>
-        <td>006</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>17</td>
-        <td>1,664.34</td>
-      </tr>
-      <tr>
-        <td>006</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>17</td>
-        <td>1,664.34</td>
-      </tr>
-      <tr>
-        <td>006</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>17</td>
-        <td>1,664.34</td>
-      </tr>
-      <tr>
-        <td>006</td>
-        <td>110A2512</td>
-        <td>SP Package-25$ 1200-1300</td>
-        <td>17</td>
-        <td>1,664.34</td>
-      </tr>
-      <tr class="sub-total">
-        <td colspan="4">
-          សរុបទំព័រទី១ Sub Total Page No. 1:
-        </td>
-        <td>
-          15,317.59
-        </td>
-      </tr>
-    </table>
+    <section class="goods-list">
+      <table class="table table-goods">
+        <tr>
+          <td>លេខរៀង</td>
+          <td>កូតទំនិញ/សេវា</td>
+          <td>បរិយាយមុខទំនិញ/សេវា</td>
+          <td>បរិមាណ</td>
+          <td>ចំនួនទឺកប្រាក់</td>
+        </tr>
+        <tr>
+          <td>Line</td>
+          <td>Item Code</td>
+          <td>Item Description</td>
+          <td>No.of Spot</td>
+          <td>US$ Amount</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>-</td>
+          <td>Ganzberg Beer Ads 02 16</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>110A4511</td>
+          <td>SP Package-455 1100-1200</td>
+          <td>13</td>
+          <td>919.19</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>110A2511</td>
+          <td>SP Package-255 1100-1200</td>
+          <td>23</td>
+          <td>1,626.26</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>110A4512</td>
+          <td>SP Package-45$ 1200-1300</td>
+          <td>8</td>
+          <td>754.21</td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>19</td>
+          <td>1,791.25</td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>17</td>
+          <td>1,664.34</td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>17</td>
+          <td>1,664.34</td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>17</td>
+          <td>1,664.34</td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>17</td>
+          <td>1,664.34</td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>110A2512</td>
+          <td>SP Package-25$ 1200-1300</td>
+          <td>17</td>
+          <td>1,664.34</td>
+        </tr>
+        <tr>
+          <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="5">&nbsp;</td>
+        </tr>      
+        <tr class="sub-total">
+          <td colspan="4">
+            សរុបទំព័រទី១ Sub Total Page No. 1:
+          </td>
+          <td>
+            15,317.59
+          </td>
+        </tr>
+        <tr class="total">
+          <td colspan="2">&nbsp;</td>
+          <td>សរុប</td>
+          <td>Total :</td>
+          <td>50,427.29</td>
+        </tr>
+        <tr class="vat">
+          <td colspan="2">&nbsp;</td>
+          <td>អាករលើតម្លៃបន្ថែម ១០%</td>
+          <td>VAT 10% :</td>
+          <td>50,42.29</td>
+        </tr>
+        <tr class="grand-total">
+          <td colspan="2">&nbsp;</td>
+          <td>សរុបរួម</td>
+          <td>GRAND TOTAL:</td>
+          <td>57,47.29</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="footer">
+      <div class="payment-options">
+        <p>ការទូទាត់អាចធ្វើឡើងតាមមូលឡបទានប័ត្រ ឬ តាមរយៈការទូទាត់នៅធនាគារ</p>
+        <p>Payment can be made by Cheque or Bank Tansfer payable to :</p>
+        <ul class="account-info">
+          <li>Account Name: Cambodian Broadcasting Service</li>
+          <li>Account No : USD 29723</li>
+          <li>Bank Name : ANZ Royal Bank (Cambodia) Ltd</li>
+          <li>SWIFT Code: ANZBKHPP</li>
+        </ul>
+      </div>
+
+      <div class="signature">
+        <p>ហត្ថលេខា</p>
+        <p>Authorized Signature</p>
+
+        <p class="sign-place"></p>        
+      </div>
+      <div class="clear"></div>
+    </section>
   </div>
 </body>
 </html>
